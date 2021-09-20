@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- fontawasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <title>DDR_World ! Home</title>
+    <style>
+        .splide__arrows{
+            display: none;
+        }
+        .splide{
+            width: 80%;            
+            height: 50px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="TOP"></div>
+    <button id="GoTop"> ^  </button>
+    <div id="" class="nav">
+        <div class="container">
+            <nav>
+                <h3 class="brand">
+                   <a href="index.html"> DDR_World</a>
+                </h3>
+                <div id="open-icon">
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                <div id="close-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul id="nav-ul">
+                    <li><a class="nav-link" href="">Home</a></li>
+                    <li><a class="nav-link" href="">About</a></li>
+                    <li><a class="nav-link" href="">Skills</a></li>
+                    <li><a class="nav-link" href="">Works</a></li>
+                    <li><a class="nav-link" href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-1 order-2 col-md-6 col-12">
+                        <div class="left text-light">
+                            <h4 class="hi">Hi , <em>My name is</em></h4>
+                            <h3 class="hero">Dileep Raloti</h3>
+                            <div class="splide">
+                                <div class="splide__arrows">
+                                    <button class="splide__arrow splide__arrow--prev">
+                                        Prev
+                                    </button>
+                                    <button class="splide__arrow splide__arrow--next">
+                                        Next
+                                    </button>
+                                </div>
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide"><h4>Front End Developer</h4></li>
+                                        <li class="splide__slide"><h4>Web Developer</h4></li>
+                                        <li class="splide__slide"><h4>Web Designer</h4></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <i class="fab fa-github-square"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <!-- <i class="fab fa-facebook-f"></i> -->
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-youtube-square"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 col-md-6 col-12">
+                        <div class="right">
+                            <img src="images/Dileep.jpeg"  alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    
+
+
+    <!-- js files -->
+    <script src="js/bootstrap.js"> </script>
+    <script src="js/app.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        new Splide('.splide', {
+            type: 'loop',
+            perPage: 1,
+            direction  : 'ttb',
+	        heightRatio: 0.2,
+            perMove: 1,
+            autoplay    : true,
+	        pauseOnHover: false,
+            interval:1700,
+            classes: {
+		arrows: 'splide__arrows your-class-arrows',
+		arrow : 'splide__arrow your-class-arrow',
+		prev  : 'splide__arrow--prev your-class-prev',
+		next  : 'splide__arrow--next your-class-next',
+	},
+      }).mount()
+    </script>
+    <!-- <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.splide' ).mount();
+        } );
+    </script> -->
+</body>
+
+</html>
